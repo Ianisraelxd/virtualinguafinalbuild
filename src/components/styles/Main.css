@@ -1,0 +1,158 @@
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInUp2 {
+  0% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+  backdrop-filter: blur(5px); /* Added blur effect for a modern look */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.main-container {
+  height: 100vh;
+  backdrop-filter: blur(5px); /* Added blur effect for a modern look */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content-image img {
+  max-width: 300px;
+  padding-bottom: 20px;
+  animation: 0.8s ease-out 0s 1 slideInUp;
+}
+
+.content-image {
+  max-width: 800px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.185);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: 0.8s ease-out 0s 1 slideInUp2;
+}
+
+.content-image h1 {
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  font-size: 48px; /* Increased font size */
+  font-weight: 900;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.content-image p {
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  font-size: 24px; /* Increased font size */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.button {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #04aa6d;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  transition: background-color 0.3s ease;
+  max-width: 100%;
+}
+
+.cta-button:hover {
+  background-color: #037b56;
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .mobile-content {
+    grid-column: span 12;
+  }
+
+  .content-image h1 {
+    font-size: 44px; /* Increased font size */
+  }
+
+  .content-image p {
+    font-size: 22px; /* Increased font size */
+  }
+
+  .content-image img {
+    max-width: 700px;
+    padding-bottom: 0px;
+  }
+}

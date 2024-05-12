@@ -1,0 +1,42 @@
+export const data = [
+  {
+    question: "1). What is Jack's job?",
+    option1: "A) Detective",
+    option2: "B) Police",
+    option3: "C) Doctor",
+    option4: "D) Attorney",
+    ans: 1,
+  },
+  {
+    question: "2). What kind of case does the boss give to Jack?",
+    option1: "A) Illegal grumbling",
+    option2: "B) Killing",
+    option3: "C) Robbing",
+    option4: "D) Accident",
+    ans: 3,
+  },
+  {
+    question: "3). How many days does the thief become famous?",
+    option1: "A) Three days",
+    option2: "B) Five days",
+    option3: "C) Four days",
+    option4: "D) Two days",
+    ans: 2,
+  },
+  {
+    question: "4). What is the shape of the tattoo on the thief's left wrist?",
+    option1: "A) Heart",
+    option2: "B) Snake",
+    option3: "C) Fire",
+    option4: "D) Bird",
+    ans: 4,
+  },
+  {
+    question: "5). After getting caught, does the thief escape from his cell?",
+    option1: "A) Yes, because he is good at escaping",
+    option2: "B) No, because he doesn't know how to escape",
+    option3: "C) Maybe, because the thief has supernatural strength",
+    option4: "D) Yes, because the cell is unlocked",
+    ans: 1,
+  },
+];
